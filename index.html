@@ -72,7 +72,7 @@
                     </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Southwest Jiaotong University <br> <sup>2</sup>Peking University <br>Conferance name and year</span>
+                    <span class="author-block"><sup>1</sup>Southwest Jiaotong University <br> <sup>2</sup>Peking University <!--<br>Conferance name and year--></span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author</small></span>
                   </div>
 
@@ -90,7 +90,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!--<span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -99,6 +99,7 @@
                       <span>Supplementary</span>
                     </a>
                   </span>
+                  -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -134,13 +135,14 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
+
+      <img src="static/images/fig.jpg"
+<!--       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
-      </video>
+      </video> -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Our CoTrans addresses the unexplored performance gap between sparse-agent and dense-agent collaborative perception, a critical bottleneck in collaborative autonomous driving. In contrast to previous research that has primarily advanced the transition from single-agent to collaborative paradigms.
       </h2>
     </div>
   </div>
@@ -155,7 +157,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Collaborative perception is a powerful paradigm that addresses the limitations of single-agent perception caused by occlusion and distance. However, in practice, sparse-agent collaborative perception (SCP) faces similar vulnerabilities to single-agent perception, leading to significant performance degradation compared to dense-agent collaborative perception (DCP). In this paper, we investigate the negative impact of SCP and propose a unified framework, CoTrans, to bridge the SCP-DCP gap for existing collaborative perception methods. This framework relies on a conceptually simple yet efficient collaboration translation, which simulates the gap in a learnable manner. Furthermore, in CoTrans, a drop-agent strategy is introduced to support the learning process without any communication burden, and a lightweight injection network equipped with localization and injection capabilities is proposed to fuse collaboration translation and SCP features. To the best of our knowledge, this is the first unified framework designed to enhance SCP. Extensive experiments across five large-scale collaborative perception datasets demonstrate that CoTrans consistently enhances existing collaborative systems in SCP scenarios, while introducing only 1ms inference latency. In particular, it achieves a 6.6\% AP gain for AttFuse on the real-world DAIR-V2X dataset under sparse-agent conditions.
           </p>
         </div>
       </div>
